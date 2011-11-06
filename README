@@ -11,4 +11,4 @@ to catch bugs more frequently in MumbleKit.
 Checking out the source
 =======================
 
-git clone github.com/mkrautz/mumble-client-mumblekit
+git clone --recursive https://github.com/mkrautz/mumble-client-mumblekit

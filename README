@@ -1,0 +1,14 @@
+What's this?
+============
+
+This is an experimental "dogfooding" Mumble client based on MumbleKit,
+the same framework that the iOS version of Mumble is based on.
+
+Its primary purpose is to have a desktop client based on MumbleKit in an attempt
+to catch bugs more frequently in MumbleKit.
+
+
+Checking out the source
+=======================
+
+git clone github.com/mkrautz/mumble-client-mumblekit

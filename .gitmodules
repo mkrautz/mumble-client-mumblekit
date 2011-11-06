@@ -1,0 +1,3 @@
+[submodule "MumbleKit"]
+	path = MumbleKit
+	url = git://github.com/mkrautz/mumblekit.git

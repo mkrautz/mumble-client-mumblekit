@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'Mumble' target in the 'Mumble' project
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
+#endif

@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+body {
+ margin: 0;
+ padding: 0px;
+}
+.logEntry {
+ width: 100%;
+ color: black;
+ font-family: 'Lucida Grande';
+ font-size: 13px;
+}
+.logEntry .logEntryTimestamp {
+ float: left;
+ padding-right: 4px;
+ padding-left: 4px;
+}
+.logEntry .logEntryMessage {
+}
+.bordered {
+ border: 1px solid black;
+ margin: 2px;
+}
+</style>
+<script>
+function addLogEntry(stamp, text) {
+	var e = document.createElement('div');
+	e.className = 'logEntry';
+	var ts = document.createElement('div');
+	ts.className = 'logEntryTimestamp';
+	var msg = document.createElement('div');
+	msg.className = 'logEntryMessage';
+	e.appendChild(ts);
+	e.appendChild(msg);
+	ts.innerHTML = stamp;
+	msg.innerHTML = text;
+	window.document.body.appendChild(e);
+}
+</script>
+</head>
+<body>
+</body>
+</html>

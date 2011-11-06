@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		283685011466D3C800EFC80E /* MULogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283685001466D3C800EFC80E /* MULogView.m */; };
+		283685081466E7DB00EFC80E /* MUConnectSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283685071466E7DB00EFC80E /* MUConnectSheetController.m */; };
+		2836850C1466E80C00EFC80E /* MUConnectSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2836850B1466E80C00EFC80E /* MUConnectSheet.xib */; };
+		288CC7071464B67700B27510 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288CC7061464B67700B27510 /* Cocoa.framework */; };
+		288CC7111464B67700B27510 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 288CC70F1464B67700B27510 /* InfoPlist.strings */; };
+		288CC7131464B67700B27510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288CC7121464B67700B27510 /* main.m */; };
+		288CC7171464B67700B27510 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 288CC7151464B67700B27510 /* Credits.rtf */; };
+		288CC71A1464B67800B27510 /* MUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 288CC7191464B67800B27510 /* MUAppDelegate.m */; };
+		288CC71D1464B67800B27510 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288CC71B1464B67800B27510 /* MainMenu.xib */; };
+		288CC7241464BAEC00B27510 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288CC7231464BAEC00B27510 /* WebKit.framework */; };
+		288CC7261464BB8A00B27510 /* mumble.icns in Resources */ = {isa = PBXBuildFile; fileRef = 288CC7251464BB8A00B27510 /* mumble.icns */; };
+		288CC7481464BD3B00B27510 /* MumbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288CC7461464BD1C00B27510 /* MumbleKit.framework */; };
+		28E6AF891464C4C00038DCB3 /* MUServerViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E6AF881464C4C00038DCB3 /* MUServerViewDataSource.m */; };
+		28E6AFAA1466243C0038DCB3 /* MUServerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E6AFA91466243C0038DCB3 /* MUServerViewDelegate.m */; };
+		28E6AFB1146633690038DCB3 /* channel.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFAC146633680038DCB3 /* channel.png */; };
+		28E6AFB2146633690038DCB3 /* talking_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFAD146633680038DCB3 /* talking_alt.png */; };
+		28E6AFB3146633690038DCB3 /* talking_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFAE146633680038DCB3 /* talking_off.png */; };
+		28E6AFB4146633690038DCB3 /* talking_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFAF146633680038DCB3 /* talking_on.png */; };
+		28E6AFB5146633690038DCB3 /* talking_whisper.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFB0146633680038DCB3 /* talking_whisper.png */; };
+		28E6AFB714663A4C0038DCB3 /* LogView.html in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFB614663A4C0038DCB3 /* LogView.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		288CC7431464BD1C00B27510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28BCF2C1132AE3B40003AEC1;
+			remoteInfo = "MumbleKit (iOS)";
+		};
+		288CC7451464BD1C00B27510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2845A71A132D9B2F0034D631;
+			remoteInfo = "MumbleKit (Mac)";
+		};
+		28BABB901464BF9A0070511F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2845A719132D9B2F0034D631;
+			remoteInfo = "MumbleKit (Mac)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		283684FF1466D3C800EFC80E /* MULogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MULogView.h; sourceTree = "<group>"; };
+		283685001466D3C800EFC80E /* MULogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MULogView.m; sourceTree = "<group>"; };
+		283685061466E7DB00EFC80E /* MUConnectSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUConnectSheetController.h; sourceTree = "<group>"; };
+		283685071466E7DB00EFC80E /* MUConnectSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUConnectSheetController.m; sourceTree = "<group>"; };
+		2836850B1466E80C00EFC80E /* MUConnectSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MUConnectSheet.xib; sourceTree = "<group>"; };
+		288CC7021464B67700B27510 /* Mumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288CC7061464B67700B27510 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		288CC7091464B67700B27510 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		288CC70A1464B67700B27510 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		288CC70B1464B67700B27510 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		288CC70E1464B67700B27510 /* Mumble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mumble-Info.plist"; sourceTree = "<group>"; };
+		288CC7101464B67700B27510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		288CC7121464B67700B27510 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		288CC7141464B67700B27510 /* Mumble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mumble-Prefix.pch"; sourceTree = "<group>"; };
+		288CC7161464B67700B27510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		288CC7181464B67800B27510 /* MUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUAppDelegate.h; sourceTree = "<group>"; };
+		288CC7191464B67800B27510 /* MUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUAppDelegate.m; sourceTree = "<group>"; };
+		288CC71C1464B67800B27510 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		288CC7231464BAEC00B27510 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		288CC7251464BB8A00B27510 /* mumble.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = mumble.icns; path = ../Resources/mumble.icns; sourceTree = "<group>"; };
+		288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MumbleKit.xcodeproj; path = MumbleKit/MumbleKit.xcodeproj; sourceTree = "<group>"; };
+		28BABB921464C0150070511F /* Mumble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Mumble.entitlements; sourceTree = "<group>"; };
+		28E6AF871464C4C00038DCB3 /* MUServerViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUServerViewDataSource.h; sourceTree = "<group>"; };
+		28E6AF881464C4C00038DCB3 /* MUServerViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUServerViewDataSource.m; sourceTree = "<group>"; };
+		28E6AFA81466243C0038DCB3 /* MUServerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUServerViewDelegate.h; sourceTree = "<group>"; };
+		28E6AFA91466243C0038DCB3 /* MUServerViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUServerViewDelegate.m; sourceTree = "<group>"; };
+		28E6AFAC146633680038DCB3 /* channel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel.png; sourceTree = "<group>"; };
+		28E6AFAD146633680038DCB3 /* talking_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talking_alt.png; sourceTree = "<group>"; };
+		28E6AFAE146633680038DCB3 /* talking_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talking_off.png; sourceTree = "<group>"; };
+		28E6AFAF146633680038DCB3 /* talking_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talking_on.png; sourceTree = "<group>"; };
+		28E6AFB0146633680038DCB3 /* talking_whisper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = talking_whisper.png; sourceTree = "<group>"; };
+		28E6AFB614663A4C0038DCB3 /* LogView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LogView.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		288CC6FF1464B67700B27510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288CC7241464BAEC00B27510 /* WebKit.framework in Frameworks */,
+				288CC7071464B67700B27510 /* Cocoa.framework in Frameworks */,
+				288CC7481464BD3B00B27510 /* MumbleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288CC6F71464B67700B27510 = {
+			isa = PBXGroup;
+			children = (
+				288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */,
+				288CC70C1464B67700B27510 /* Mumble */,
+				288CC7051464B67700B27510 /* Frameworks */,
+				288CC7031464B67700B27510 /* Products */,
+				28E6AFAB146633680038DCB3 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		288CC7031464B67700B27510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288CC7021464B67700B27510 /* Mumble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		288CC7051464B67700B27510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288CC7231464BAEC00B27510 /* WebKit.framework */,
+				288CC7061464B67700B27510 /* Cocoa.framework */,
+				288CC7081464B67700B27510 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		288CC7081464B67700B27510 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288CC7091464B67700B27510 /* AppKit.framework */,
+				288CC70A1464B67700B27510 /* CoreData.framework */,
+				288CC70B1464B67700B27510 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		288CC70C1464B67700B27510 /* Mumble */ = {
+			isa = PBXGroup;
+			children = (
+				288CC7181464B67800B27510 /* MUAppDelegate.h */,
+				288CC7191464B67800B27510 /* MUAppDelegate.m */,
+				28E6AF871464C4C00038DCB3 /* MUServerViewDataSource.h */,
+				28E6AF881464C4C00038DCB3 /* MUServerViewDataSource.m */,
+				28E6AFA81466243C0038DCB3 /* MUServerViewDelegate.h */,
+				28E6AFA91466243C0038DCB3 /* MUServerViewDelegate.m */,
+				283684FF1466D3C800EFC80E /* MULogView.h */,
+				283685001466D3C800EFC80E /* MULogView.m */,
+				288CC71B1464B67800B27510 /* MainMenu.xib */,
+				283685061466E7DB00EFC80E /* MUConnectSheetController.h */,
+				283685071466E7DB00EFC80E /* MUConnectSheetController.m */,
+				2836850B1466E80C00EFC80E /* MUConnectSheet.xib */,
+				288CC70D1464B67700B27510 /* Supporting Files */,
+			);
+			path = Mumble;
+			sourceTree = "<group>";
+		};
+		288CC70D1464B67700B27510 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28BABB921464C0150070511F /* Mumble.entitlements */,
+				288CC7251464BB8A00B27510 /* mumble.icns */,
+				288CC70E1464B67700B27510 /* Mumble-Info.plist */,
+				288CC70F1464B67700B27510 /* InfoPlist.strings */,
+				288CC7121464B67700B27510 /* main.m */,
+				288CC7141464B67700B27510 /* Mumble-Prefix.pch */,
+				288CC7151464B67700B27510 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		288CC7281464BD1B00B27510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288CC7441464BD1C00B27510 /* libMumbleKit.a */,
+				288CC7461464BD1C00B27510 /* MumbleKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28E6AFAB146633680038DCB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28E6AFB614663A4C0038DCB3 /* LogView.html */,
+				28E6AFAC146633680038DCB3 /* channel.png */,
+				28E6AFAD146633680038DCB3 /* talking_alt.png */,
+				28E6AFAE146633680038DCB3 /* talking_off.png */,
+				28E6AFAF146633680038DCB3 /* talking_on.png */,
+				28E6AFB0146633680038DCB3 /* talking_whisper.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		288CC7011464B67700B27510 /* Mumble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288CC7201464B67800B27510 /* Build configuration list for PBXNativeTarget "Mumble" */;
+			buildPhases = (
+				288CC6FE1464B67700B27510 /* Sources */,
+				288CC6FF1464B67700B27510 /* Frameworks */,
+				288CC7001464B67700B27510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BABB911464BF9A0070511F /* PBXTargetDependency */,
+			);
+			name = Mumble;
+			productName = Mumble;
+			productReference = 288CC7021464B67700B27510 /* Mumble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288CC6F91464B67700B27510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 288CC6FC1464B67700B27510 /* Build configuration list for PBXProject "Mumble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 288CC6F71464B67700B27510;
+			productRefGroup = 288CC7031464B67700B27510 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 288CC7281464BD1B00B27510 /* Products */;
+					ProjectRef = 288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				288CC7011464B67700B27510 /* Mumble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		288CC7441464BD1C00B27510 /* libMumbleKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMumbleKit.a;
+			remoteRef = 288CC7431464BD1C00B27510 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		288CC7461464BD1C00B27510 /* MumbleKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MumbleKit.framework;
+			remoteRef = 288CC7451464BD1C00B27510 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		288CC7001464B67700B27510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288CC7111464B67700B27510 /* InfoPlist.strings in Resources */,
+				288CC7171464B67700B27510 /* Credits.rtf in Resources */,
+				288CC71D1464B67800B27510 /* MainMenu.xib in Resources */,
+				288CC7261464BB8A00B27510 /* mumble.icns in Resources */,
+				28E6AFB1146633690038DCB3 /* channel.png in Resources */,
+				28E6AFB2146633690038DCB3 /* talking_alt.png in Resources */,
+				28E6AFB3146633690038DCB3 /* talking_off.png in Resources */,
+				28E6AFB4146633690038DCB3 /* talking_on.png in Resources */,
+				28E6AFB5146633690038DCB3 /* talking_whisper.png in Resources */,
+				28E6AFB714663A4C0038DCB3 /* LogView.html in Resources */,
+				2836850C1466E80C00EFC80E /* MUConnectSheet.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288CC6FE1464B67700B27510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288CC7131464B67700B27510 /* main.m in Sources */,
+				288CC71A1464B67800B27510 /* MUAppDelegate.m in Sources */,
+				28E6AF891464C4C00038DCB3 /* MUServerViewDataSource.m in Sources */,
+				28E6AFAA1466243C0038DCB3 /* MUServerViewDelegate.m in Sources */,
+				283685011466D3C800EFC80E /* MULogView.m in Sources */,
+				283685081466E7DB00EFC80E /* MUConnectSheetController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28BABB911464BF9A0070511F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MumbleKit (Mac)";
+			targetProxy = 28BABB901464BF9A0070511F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		288CC70F1464B67700B27510 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288CC7101464B67700B27510 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		288CC7151464B67700B27510 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288CC7161464B67700B27510 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		288CC71B1464B67800B27510 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288CC71C1464B67800B27510 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		288CC71E1464B67800B27510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		288CC71F1464B67800B27510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		288CC7211464B67800B27510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mumble/Mumble-Prefix.pch";
+				INFOPLIST_FILE = "Mumble/Mumble-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		288CC7221464B67800B27510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mumble/Mumble-Prefix.pch";
+				INFOPLIST_FILE = "Mumble/Mumble-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		288CC6FC1464B67700B27510 /* Build configuration list for PBXProject "Mumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288CC71E1464B67800B27510 /* Debug */,
+				288CC71F1464B67800B27510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288CC7201464B67800B27510 /* Build configuration list for PBXNativeTarget "Mumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288CC7211464B67800B27510 /* Debug */,
+				288CC7221464B67800B27510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288CC6F91464B67700B27510 /* Project object */;
+}

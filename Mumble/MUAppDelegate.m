@@ -48,7 +48,7 @@
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification {    
     MKAudioSettings settings;
     settings.transmitType = MKTransmitTypeVAD;
-	settings.codec = MKCodecFormatSpeex;
+	settings.codec = MKCodecFormatCELT;
 	settings.quality = 24000;
 	settings.audioPerPacket = 10;
 	settings.noiseSuppression = -42; /* -42 dB */

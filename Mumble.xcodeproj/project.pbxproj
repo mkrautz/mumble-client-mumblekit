@@ -19,6 +19,10 @@
 		288CC7241464BAEC00B27510 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288CC7231464BAEC00B27510 /* WebKit.framework */; };
 		288CC7261464BB8A00B27510 /* mumble.icns in Resources */ = {isa = PBXBuildFile; fileRef = 288CC7251464BB8A00B27510 /* mumble.icns */; };
 		288CC7481464BD3B00B27510 /* MumbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288CC7461464BD1C00B27510 /* MumbleKit.framework */; };
+		28ADB3771467524900127671 /* MUPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB3761467524900127671 /* MUPreferencesController.m */; };
+		28ADB37A1467556200127671 /* MUGlobalShortcutField.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB3791467556200127671 /* MUGlobalShortcutField.m */; };
+		28ADB37D1467593200127671 /* MUGlobalShortcutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB37C1467593200127671 /* MUGlobalShortcutController.m */; };
+		28ADB37F1467598A00127671 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB37E1467598A00127671 /* ApplicationServices.framework */; };
 		28E6AF891464C4C00038DCB3 /* MUServerViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E6AF881464C4C00038DCB3 /* MUServerViewDataSource.m */; };
 		28E6AFAA1466243C0038DCB3 /* MUServerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E6AFA91466243C0038DCB3 /* MUServerViewDelegate.m */; };
 		28E6AFB1146633690038DCB3 /* channel.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6AFAC146633680038DCB3 /* channel.png */; };
@@ -75,6 +79,13 @@
 		288CC7231464BAEC00B27510 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		288CC7251464BB8A00B27510 /* mumble.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = mumble.icns; path = ../Resources/mumble.icns; sourceTree = "<group>"; };
 		288CC7271464BD1B00B27510 /* MumbleKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MumbleKit.xcodeproj; path = MumbleKit/MumbleKit.xcodeproj; sourceTree = "<group>"; };
+		28ADB3751467524900127671 /* MUPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPreferencesController.h; sourceTree = "<group>"; };
+		28ADB3761467524900127671 /* MUPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUPreferencesController.m; sourceTree = "<group>"; };
+		28ADB3781467556200127671 /* MUGlobalShortcutField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGlobalShortcutField.h; sourceTree = "<group>"; };
+		28ADB3791467556200127671 /* MUGlobalShortcutField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGlobalShortcutField.m; sourceTree = "<group>"; };
+		28ADB37B1467593200127671 /* MUGlobalShortcutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGlobalShortcutController.h; sourceTree = "<group>"; };
+		28ADB37C1467593200127671 /* MUGlobalShortcutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGlobalShortcutController.m; sourceTree = "<group>"; };
+		28ADB37E1467598A00127671 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		28BABB921464C0150070511F /* Mumble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Mumble.entitlements; sourceTree = "<group>"; };
 		28E6AF871464C4C00038DCB3 /* MUServerViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUServerViewDataSource.h; sourceTree = "<group>"; };
 		28E6AF881464C4C00038DCB3 /* MUServerViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUServerViewDataSource.m; sourceTree = "<group>"; };
@@ -93,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ADB37F1467598A00127671 /* ApplicationServices.framework in Frameworks */,
 				288CC7241464BAEC00B27510 /* WebKit.framework in Frameworks */,
 				288CC7071464B67700B27510 /* Cocoa.framework in Frameworks */,
 				288CC7481464BD3B00B27510 /* MumbleKit.framework in Frameworks */,
@@ -124,6 +136,7 @@
 		288CC7051464B67700B27510 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28ADB37E1467598A00127671 /* ApplicationServices.framework */,
 				288CC7231464BAEC00B27510 /* WebKit.framework */,
 				288CC7061464B67700B27510 /* Cocoa.framework */,
 				288CC7081464B67700B27510 /* Other Frameworks */,
@@ -156,6 +169,12 @@
 				283685061466E7DB00EFC80E /* MUConnectSheetController.h */,
 				283685071466E7DB00EFC80E /* MUConnectSheetController.m */,
 				2836850B1466E80C00EFC80E /* MUConnectSheet.xib */,
+				28ADB3751467524900127671 /* MUPreferencesController.h */,
+				28ADB3761467524900127671 /* MUPreferencesController.m */,
+				28ADB3781467556200127671 /* MUGlobalShortcutField.h */,
+				28ADB3791467556200127671 /* MUGlobalShortcutField.m */,
+				28ADB37B1467593200127671 /* MUGlobalShortcutController.h */,
+				28ADB37C1467593200127671 /* MUGlobalShortcutController.m */,
 				288CC70D1464B67700B27510 /* Supporting Files */,
 			);
 			path = Mumble;
@@ -298,6 +317,9 @@
 				28E6AFAA1466243C0038DCB3 /* MUServerViewDelegate.m in Sources */,
 				283685011466D3C800EFC80E /* MULogView.m in Sources */,
 				283685081466E7DB00EFC80E /* MUConnectSheetController.m in Sources */,
+				28ADB3771467524900127671 /* MUPreferencesController.m in Sources */,
+				28ADB37A1467556200127671 /* MUGlobalShortcutField.m in Sources */,
+				28ADB37D1467593200127671 /* MUGlobalShortcutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

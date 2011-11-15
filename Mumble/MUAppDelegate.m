@@ -28,10 +28,16 @@
    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import "MUAppDelegate.h"
 #import <MumbleKit/MKAudio.h>
 #import <MumbleKit/MKConnection.h>
+
+#import "MUAppDelegate.h"
 #import "MUConnectSheetController.h"
+#import "MUGlobalShortcutController.h"
+
+@interface MUAppDelegate () <MUGlobalShortcutControllerDelegate> {
+}
+@end
 
 @implementation MUAppDelegate
 
@@ -39,11 +45,38 @@
 @synthesize serverView = _serverView;
 @synthesize webView = _webView;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    MKAudio *audio = [MKAudio sharedAudio];
-    [audio start];
+- (void) applicationDidFinishLaunching:(NSNotification *)aNotification {    
+    MKAudioSettings settings;
+    settings.transmitType = MKTransmitTypeVAD;
+	settings.codec = MKCodecFormatSpeex;
+	settings.quality = 24000;
+	settings.audioPerPacket = 10;
+	settings.noiseSuppression = -42; /* -42 dB */
+	settings.amplification = 20.0f;
+	settings.jitterBufferSize = 0; /* 10 ms */
+	settings.volume = 1.0;
+	settings.outputDelay = 0; /* 10 ms */
+	settings.enablePreprocessor = YES;
+	settings.enableBenchmark = YES;
+
+	MKAudio *audio = [MKAudio sharedAudio];
+	[audio updateAudioSettings:&settings];
+	[audio restart];
+
+    MUGlobalShortcutController *gs = [MUGlobalShortcutController sharedController];
+    [gs setDelegate:self];
+
     _logView = [[MULogView alloc] initWithWebView:_webView];
+}
+
+- (void) globalShortcutController:(MUGlobalShortcutController *)globalShortcut keyCode:(NSUInteger)keyCode down:(BOOL)isDown {
+    
+    NSUInteger pttKeyCode = [[[NSUserDefaults standardUserDefaults] objectForKey:@"MUPushToTalkKey"] unsignedIntegerValue];
+
+    if (pttKeyCode == keyCode) {
+        MKAudio *audio = [MKAudio sharedAudio];
+        [audio setForceTransmit:isDown];
+    }
 }
 
 - (IBAction) showConnectDialog:(id)sender {
@@ -97,6 +130,9 @@
 
 // Trust failure
 - (void) connection:(MKConnection *)conn trustFailureInCertificateChain:(NSArray *)chain {
+    // Ignore trust failures, for now...
+    [conn setIgnoreSSLVerification:YES];
+    [conn reconnect];
 }
 
 // Rejected
